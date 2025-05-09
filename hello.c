@@ -71,6 +71,7 @@
 //	return 0;
 //}
 //
+
 int add(int a, int b) {
 	return a + b;
 }
@@ -81,6 +82,7 @@ struct Student {
 	char name[20];
 	int sex;//0 for men, 1 for women
 };
+
 void printStu(struct Student* ps) {
 	printf("%d\n", ps->id);
 	printf("%d\n", ps->age);
@@ -89,6 +91,7 @@ void printStu(struct Student* ps) {
 	//same
 	printf("%d %d %s %d\n", (*ps).id, (*ps).age, (*ps).name, (*ps).sex);
 }
+
 int main() {
 	//Control sentences
 	/*int input = 0;
@@ -126,18 +129,17 @@ int main() {
 	printf("%d\n", a);*/
 
 	//struct
-	//struct Student stu1 = {	1,16,"zhangsan",0};
-	//struct Student stu2 = { 2,17,"lisi",1 };
-	///*printf("%d\n", stu1.id);
-	//printf("%d\n", stu1.age);
-	//printf("%s\n", stu1.name);
-	//if (stu1.sex == 0) {
-	//	printf("man\n");
-	//}
-	//else {
-	//	printf("woman\n");
-	//}*/
-	//printStu(&stu2);
+	/*struct Student stu1 = {	1,16,"zhangsan",0};
+	struct Student stu2 = { 2,17,"lisi",1 };
+	printf("%d\n", stu1.age);
+	printf("%s\n", stu1.name);
+	if (stu1.sex == 0) {
+		printf("man\n");
+	}
+	else {
+		printf("woman\n");
+	}
+	printStu(&stu2);*/
 
 	//switch
 	/*int m = 1;
@@ -162,7 +164,8 @@ int main() {
 	while ((ch = getchar()) != EOF) {
 		putchar(ch);
 	}*/
-	char password[20] = { 0 };
+
+	/*char password[20] = {0};
 	printf("input password\n");
 	scanf("%s", password);// scanf can't read space
 	int ch = 0;
@@ -179,6 +182,47 @@ int main() {
 	}
 	else {
 		printf("error\n");
+	}*/
+
+	//for
+	/*int i = 0;
+	for (int i = 1; i <= 10; i++) { // 1 2 3 4
+		if (i == 5) {
+			break;
+		}
+		printf("%d\n", i);
 	}
+	for (int i = 1; i <= 10; i++) {//1 2 3 4 6 7 8 9 10
+		if (i == 5) { 
+			continue;
+		}
+		printf("%d\n", i);
+	}
+	int i = 0;
+	printf("i = %d\n", i);*/
+	
+	// while
+	/*int j = 0;
+	while (j < 10) {
+		if (j == 5) {
+			j++;
+			continue;
+		}
+		printf("%d\n", j);
+		j++;
+	}*/
+
+	//do while
+	/*int i = 1;
+	do {
+		if (i == 5) {
+			i++;
+			continue;
+		}
+		printf("%d ", i);
+		i++;
+	} 
+	while (i<=10);*/
+
 	return 0;
 }
