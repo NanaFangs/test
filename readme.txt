@@ -1,3 +1,2 @@
-readme;
-Git is a distributed version control system.
-Git is free software distributed under the GPL.
+This is the process of learning C language.
+Use github to record.
