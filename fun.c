@@ -13,6 +13,27 @@ void swap(int* a, int* b) {
 	*b = temp;
 }
 
+int binary_search(int arr[],int target,int size) {
+	int left = 0;
+	int right = size - 1;
+	while (left <= right) {
+		int mid = left + (right - left) / 2;
+		if (arr[mid] == target) {
+			return mid;
+		}
+		else if (arr[mid] > target) {
+			right = mid - 1;
+		}
+		else {
+			left = mid + 1;
+		}
+	}
+	return -1;
+}
+void self_add(int* a) {
+	(*a)++;
+}
+
 int main() {
 	//library function
 	//char arr[10] = { 0 };
@@ -36,12 +57,36 @@ int main() {
 	printf("%d\n", max); */
 
 	//swap two numbers
-	int a = 0;
+	/*int a = 0;
 	int b = 0;
 	scanf("%d %d", &a, &b);
 	printf("before swap a:%d, b:%d\n", a, b);
 	swap(&a, &b);
-	printf("after swap a:%d, b:%d\n", a, b);
+	printf("after swap a:%d, b:%d\n", a, b);*/
 
+	//binary search
+	/*int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	int size = sizeof(arr) / sizeof(arr[0]);
+	int target = 5;
+	int result = binary_search(arr, target, size);
+	if (result != -1) {
+		printf("Element found at index: %d\n", result);
+	}
+	else {
+		printf("Element not found\n");
+	}*/
+
+	//self add number
+	//int num = 0;
+	//self_add(&num);
+	//printf("%d\n", num); // 1
+	//self_add(&num);
+	//printf("%d\n", num);//2
+	//self_add(&num);
+	//printf("%d\n", num);//3
+	//self_add(&num);
+	//printf("%d\n", num);//4
+
+	//nested function
 
 }
