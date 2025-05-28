@@ -1,0 +1,5 @@
+﻿  game.c
+  test.c
+  Generating Code...
+C:\Users\SunFang\Desktop\C_Learning\SANZIQI\SANZIQI\test.c(52,22): warning C4013: 'time' undefined; assuming extern returning int
+  SANZIQI.vcxproj -> C:\Users\SunFang\Desktop\C_Learning\SANZIQI\x64\Debug\SANZIQI.exe
