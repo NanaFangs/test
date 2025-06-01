@@ -1,0 +1,5 @@
+﻿  game.c
+  test.c
+C:\Users\SunFang\Desktop\C_Learning\Game2\Game2\test.c(33,22): warning C4013: 'time' undefined; assuming extern returning int
+  Generating Code...
+  Game2.vcxproj -> C:\Users\SunFang\Desktop\C_Learning\Game2\x64\Debug\Game2.exe
